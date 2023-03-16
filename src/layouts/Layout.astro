@@ -1,21 +1,57 @@
 ---
 export interface Props {
-  title: string
+    title: string
 }
 
-const { title } = Astro.props
+const {title} = Astro.props
 ---
 
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body>
-    <slot />
-  </body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="generator" content={Astro.generator}/>
+    <meta name="keywords"
+          content="h7ml,h7ml博客,h7ml.cn,前端开发,VuePress博客,vue,react,angular,element-ui,uni-app,vscode,javascript,css,css3,html5,mysql,docker,rxjava,redis,vite,miniprogram,微信小程序,linux,nginx,navicat,python,go,php,erlang">
+    <link rel="canonical" href="https://www.h7ml.cn/">
+    <meta property="og:url" content="https://www.h7ml.cn/">
+    <meta property="og:site_name" content="h7ml-前端物语">
+    <meta property="og:title" content="前端物语">
+    <meta property="og:description" content="h7ml是一个专注于前端物语的VuePress博客，致力于分享前端开发的技术和经验。我们涵盖了JavaScript、CSS、HTML5、MySQL等多个方面的编程实践和学习笔记，旨在帮助前端开发者提高技能水平和解决实际问题。此外，我们也开源了多个项目，欢迎加入我们的社区，一起探索前端开发的世界！">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh-CN">
+    <meta property="og:updated_time" content="2023-02-24T16:45:13.000Z">
+    <meta property="article:modified_time" content="2023-02-24T16:45:13.000Z">
+    <meta name="description" content="h7ml是一个专注于前端物语的VuePress博客，致力于分享前端开发的技术和经验。我们涵盖了JavaScript、CSS、HTML5、MySQL等多个方面的编程实践和学习笔记，旨在帮助前端开发者提高技能水平和解决实际问题。此外，我们也开源了多个项目，欢迎加入我们的社区，一起探索前端开发的世界！">
+    <meta name="baidu-site-verification" content="code-Lp1igULfj7">
+    <meta name="sogou_site_verification" content="BWYVlXjMMm">
+    <meta name="shenma-site-verification" content="ee99e8921fe7309289e832fd8b02b3c4_1675848238">
+    <meta name="360-site-verification" content="d429aed2ee74fc7e9fd3e2321ce178a7">
+    <meta name="google-site-verification" content="aY4x14jxZErrVd-FCPVQDhEjk9A_kKf9Cav8QDDVi98">
+    <meta name="X-UA-Compatible" content="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://hm.baidu.com/hm.js?35afc12d4ac49f5dd49db387044b8cd0"></script>
+    <link rel="icon" href="https://static.h7ml.cn/vitepress/assets/icon/chrome-mask-512.png" type="image/png"
+          sizes="512x512">
+    <link rel="icon" href="https://static.h7ml.cn/vitepress/assets/icon/chrome-mask-192.png" type="image/png"
+          sizes="192x192">
+    <link rel="icon" href="https://static.h7ml.cn/vitepress/assets/icon/chrome-512.png" type="image/png"
+          sizes="512x512">
+    <link rel="icon" href="https://static.h7ml.cn/vitepress/assets/icon/chrome-192.png" type="image/png"
+          sizes="192x192">
+    <meta name="theme-color" content="#46bd87">
+    <link rel="apple-touch-icon" href="https://static.h7ml.cn/vitepress/assets/icon/apple-icon-152.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="https://static.h7ml.cn/vitepress/assets/icon/ms-icon-144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <title>前端物语 | h7ml-{title}</title>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"JzuEBT2hGD5sP4gy",ck:"JzuEBT2hGD5sP4gy",autoTrack:true,hashMode:true})</script>
+</head>
+<body>
+<slot/>
+</body>
 </html>
